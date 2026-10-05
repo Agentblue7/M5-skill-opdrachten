@@ -1,292 +1,380 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-size: 1.6rem;
-  font-family:
-    -apple-system, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
-  background: #fafafa;
+    font-size: 1.6rem;
+    font-family:
+        -apple-system, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+        "Open Sans", "Helvetica Neue", sans-serif;
+    background: #fafafa;
 }
 
 html {
-  font-size: 62.5%;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+    font-size: 62.5%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 html::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 main {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar {
-  position: fixed;
-  display: flex;
-  z-index: 1;
-  
-  justify-content: center;
-  background: rgb(255, 255, 255);
-  width: 100%;
-  border: 1px solid rgb(218, 217, 217);
+    position: fixed;
+    display: flex;
+    z-index: 1;
+
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    border: 1px solid rgb(218, 217, 217);
 }
 
 .navbar .container {
-  padding: 10px 20px;
-  width: 75%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    padding: 10px 20px;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .searchbar input {
-  background-color: #fafafa;
-  padding: 5px;
-  text-indent: 21px;
-  outline: none;
-  border: 1px solid rgb(218, 217, 217);
-  border-radius: 2px;
-  color: rgb(77, 77, 77);
+    background-color: #fafafa;
+    padding: 5px;
+    text-indent: 21px;
+    outline: none;
+    border: 1px solid rgb(218, 217, 217);
+    border-radius: 2px;
+    color: rgb(77, 77, 77);
 }
 
 main .container {
-  position: relative;
-  margin-top: 60px;
-  width: 75%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+    position: relative;
+    margin-top: 60px;
+    width: 75%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
- /*column code used for posts and status viewer max width*/
+/*column code used for posts and status viewer max width*/
 .column {
-  width: 65%;
-  margin-top: 30px;
+    width: 65%;
+    margin-top: 30px;
 }
 
 .statuses {
-  margin-bottom: 30px;
-  width: 100%;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  padding: 20px 0;
-  border-radius: 2px;
-  border: 1px solid rgb(218, 217, 217);
-  overflow: auto;
+    margin-bottom: 30px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 20px 0;
+    border-radius: 2px;
+    border: 1px solid rgb(218, 217, 217);
+    overflow: auto;
 }
 
 .statuses .status {
-  border-radius: 50%;
-  overflow: auto;
-  width: 70px;
-  height: 70px;
-  min-width: 70px;
-  min-height: 70px;
-  background: linear-gradient(to right, red, orange);
-  padding: 2px;
-  margin-left: 15px;
-  cursor: pointer;
+    border-radius: 50%;
+    overflow: auto;
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    min-height: 70px;
+    background: linear-gradient(to right, red, orange);
+    padding: 2px;
+    margin-left: 15px;
+    cursor: pointer;
 }
 
 .statuses .status .image {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  overflow: hidden;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid white;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
 }
 
 .statuses .status img,
 .profilePic .profile_img img,
 .imgBox img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
- /*Column used for the posts*/
+/*Column used for the posts*/
 .column .card {
-  margin-bottom: 20px;
-  position: relative;
-  width: 100%;
-  display: inline-block;
-  border: 1px solid rgba(7, 7, 7, 0.24);
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid rgba(7, 7, 7, 0.24);
 }
 
 .column .card .top {
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .column .card .bottom {
-  padding: 10px 20px;
+    padding: 10px 20px;
 }
 
 .column .card .top .userDetails {
-  width: 100%;
-  display: flex;
-  align-items: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .profilePic {
-  display: inline-block;
-  cursor: pointer;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .profilePic .profile_img {
-  border-radius: 50%;
-  overflow: hidden;
-  width: 30px;
-  height: 30px;
-  background: linear-gradient(to right, red, orange);
-  padding: 2px;
-  margin-right: 10px;
-  cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(to right, red, orange);
+    padding: 2px;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
 .profilePic .profile_img .image {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  overflow: hidden;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid white;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
 }
 
 .cover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .column .card .top .userDetails h3 {
-  font-size: 16px;
-  color: #4d4d4f;
-  font-weight: 500;
+    font-size: 16px;
+    color: #4d4d4f;
+    font-weight: 500;
 }
 
 .column .card .top .userDetails h3 span {
-  font-size: 12px;
+    font-size: 12px;
 }
 
 .dot {
-  cursor: pointer; 
+    cursor: pointer;
 }
 
 .imgBox {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-  margin: 10px 0 15px;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    margin: 10px 0 15px;
 }
 
 .imgBox img {
-  display: block;
+    display: block;
 }
 
 .actionBtns {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .actionBtns .left svg {
-  font-size: 26px;
-  margin-right: 8px;
-  margin-bottom: 10px;
+    font-size: 26px;
+    margin-right: 8px;
+    margin-bottom: 10px;
 }
 
 .actionBtns .right svg {
-  font-size: 26px;
-  margin-bottom: 10px;
+    font-size: 26px;
+    margin-bottom: 10px;
 }
 
 .likes {
-  font-weight: 500;
-  margin-top: 5px;
-  font-size: 14px;
-  color: #4d4d4f;
+    font-weight: 500;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #4d4d4f;
 }
 
 .message {
-  margin-top: 5px;
-  font-size: 14px;
-  color: #777;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #777;
 }
 
 .message b {
-  color: #262626;
+    color: #262626;
 }
 
 .message span {
-  cursor: pointer;
-  color: #1d92ff;
+    cursor: pointer;
+    color: #1d92ff;
 }
 
 .comments {
-  margin-top: 10px;
-  font-weight: 400;
-  color: #999;
+    margin-top: 10px;
+    font-weight: 400;
+    color: #999;
 }
 
 .addComments {
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-  border-top: 1px solid #ddd;
-  padding: 10px 0;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
 }
 
 .addComments a {
-  color: #1d92ffcb;
+    color: #1d92ffcb;
 }
 
 .addComments .reaction {
-  position: relative;
-  font-size: 18px;
-  margin-right: 10px;
-  color: rgb(88, 88, 88);
+    position: relative;
+    font-size: 18px;
+    margin-right: 10px;
+    color: rgb(88, 88, 88);
 }
 
 input.text {
-  width: 100%;
-  border: none;
-  outline: none;
-  font-size: 14px;
-  color: #262626;
-  background: none;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #262626;
+    background: none;
 }
 
 .postTime {
-  margin-top: 8px;
-  font-weight: lighter;
-  color: rgb(163, 163, 163);
-  font-size: 12px;
-  text-transform: uppercase;
+    margin-top: 8px;
+    font-weight: lighter;
+    color: rgb(163, 163, 163);
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.suggestions {
+    width: 33%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 90px;
+}
+
+.suggestions h4 {
+    color: rgb(100, 100, 100);
+}
+
+.suggestions .card {
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+
+    display: inline-block;
+}
+
+.suggestions .card .top {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.suggestions .card .top a {
+    color: #1d92ff;
+}
+
+.suggestions .card .bottom {
+    padding: 10px 20px;
+}
+
+.suggestions .card .top .userDetails {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.suggestions .card .top .userDetails h3 {
+    font-size: 16px;
+    color: #4d4d4f;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.suggestions .card .top .userDetails h3 span {
+    font-size: 12px;
+}
+
+.suggestions footer {
+    max-width: 100%;
+}
+
+.suggestions footer > a {
+    display: block;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    color: #999999;
+    font-size: 12px;
+}
+
+.FooterList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.FooterList .about,
+.FooterList .locations {
+    list-style: none;
+}
+
+.FooterList li {
+    display: list-item;
+    font-size: 12px;
+    margin-right: 0.5rem;
+    color: #999999;
+    font-family: sans-serif;
+}
+
+.FooterList li a {
+    color: #999999;
 }
