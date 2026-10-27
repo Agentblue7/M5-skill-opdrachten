@@ -2,6 +2,8 @@ body {
     padding: 0;
     margin: 0;
     width: auto;
+    background-image: url("https://wallpapercave.com/wp/wp8813120.jpg");
+    background-size: cover;
 }
 
 main {
@@ -85,7 +87,48 @@ button {
     box-sizing: border-box;
 }
 
+.moves-section {
+    height: auto;
+    min-height: 12rem;
+}
 
+.moves {
+    columns: 2;
+    column-gap: 2rem;
+}
+
+.types{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.types div
+{
+    font-size: 18px;
+}
+
+.stats li{
+    font-size: 20px;
+}
+
+.poison{
+    background-color: darkgreen;
+    padding: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    border: 2px solid green;
+    border-radius: 8px;
+}
+
+.ground{
+    background-color: saddlebrown;
+    padding: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    border: 2px solid brown;
+    border-radius: 8px;
+}
 
 .material-symbols-outlined {
     font-variation-settings:
