@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search"
+        />
+        <script src="main.js" defer></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <h1>Pokedex</h1>
+            <div class="search">
+                <input type="search" class="pokeSearch" />
+                <button>
+                    <span class="material-symbols-outlined">search</span>
+                </button>
+            </div>
+        </header>
+
+        <main class="pokemon">
+            <section class="info">
+                <h2 class="name" id="name">placeholder</h2>
+                <div class="types"></div>
+            </section>
+
+            <section class="img">
+                <div class="image-box">
+                    <img
+                        class="pokemon-img"
+                        id="img"
+                        src="https://i.pinimg.com/1200x/00/f3/37/00f3377b3173d9c561a1af0cb7a1d069.jpg"
+                        alt=""
+                    />
+                </div>
+            </section>
+
+            <section class="stats">
+                <ul>
+                    <li class="stat"></li>
+                    <li class="stat"></li>
+                    <li class="stat"></li>
+                    <li class="stat"></li>
+                    <li class="stat"></li>
+                    <li class="stat"></li>
+                </ul>
+            </section>
+
+            <section class="moves-section">
+                <ul class="moves"></ul>
+            </section>
+        </main>
+    </body>
+</html>

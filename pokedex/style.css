@@ -1,0 +1,96 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+
+main {
+    width: min(100%, 50rem);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokeSearch {
+    height: 34px;
+}
+
+button {
+    display: inline-block;
+    margin-left: 10px;
+    padding-top: 3px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.info {
+    background-color: silver;
+    width: 50%;
+    height: 20rem;
+    border: 2px solid;
+    box-sizing: border-box;
+}
+
+.info h2 {
+    font-size: 28px;
+    text-align: center;
+    border-bottom: 2px solid;
+    margin: 0;
+    padding: 20px;
+}
+
+.img {
+    background-color: silver;
+    width: 50%;
+    height: 20rem;
+    border: 2px solid;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.img .image-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgrey;
+}
+
+.pokemon-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.stats,
+.moves-section {
+    width: 100%;
+    background-color: silver;
+    width: 50%;
+    height: 12rem;
+    border: 2px solid;
+    box-sizing: border-box;
+}
+
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        "FILL" 0,
+        "wght" 400,
+        "GRAD" 0,
+        "opsz" 24;
+}
